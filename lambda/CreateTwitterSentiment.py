@@ -1,3 +1,7 @@
+# This script is triggered by AWS S3 bucket
+# event => S3 PUT/POST JSON
+
+
 import json
 import boto3
 
