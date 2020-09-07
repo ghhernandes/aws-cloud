@@ -1,3 +1,2 @@
-# AWS-Cloud/Lambda
-
-Lambda scripts created in AWS Cloud.
+#Lambda 
+Lambda contents about AWS Cloud.
