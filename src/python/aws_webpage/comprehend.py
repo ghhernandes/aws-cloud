@@ -1,5 +1,6 @@
-from . import app
+from aws_webpage import app 
+from flask import render_template
 
-@app.route('/comprehend'):
+@app.route('/comprehend')
 def comprehend():
-    return 'Comprehend'
+    return render_template('main.html') 
