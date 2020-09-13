@@ -1,9 +1,9 @@
 from aws_webpage import app 
 from flask import render_template, request
-
+import json
 import requests as r
 
-API_URL = "yep your api url" 
+API_URL = "https://d8fez0r660.execute-api.us-east-1.amazonaws.com/prod" 
 
 @app.route('/comprehend', methods=['GET', 'POST'])
 def comprehend():
@@ -12,6 +12,11 @@ def comprehend():
     else:
         text = str(request.form['text'])
 
-        api_request = r.post(API_URL, data={"text": [text]})
-        return render_template('comprehend.html', text=api_request.content.decode('utf8'))
+        response = r.post(API_URL, json={"text": [text]})
+        response = json.loads(response.text)['body']
+        response = json.dumps(json.loads(response)['ResultList'], indent=4, sort_keys=True)
+        print(response)
+        return render_template('comprehend.html', 
+                text=text,
+                response=response)
 
