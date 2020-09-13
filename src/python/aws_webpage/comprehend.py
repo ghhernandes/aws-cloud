@@ -3,7 +3,7 @@ from flask import render_template, request
 import json
 import requests as r
 
-API_URL = "https://d8fez0r660.execute-api.us-east-1.amazonaws.com/prod" 
+API_URL = "API URL here" 
 
 @app.route('/comprehend', methods=['GET', 'POST'])
 def comprehend():
