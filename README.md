@@ -1,5 +1,19 @@
 # AWS Cloud
 
-Repository for AWS Cloud 
+Repository for work with AWS Cloud.
 
+- Lambda
+- S3
+- EC2
+- Comprehend
+- Rekognition
+
+and more.
+
+
+## Languages
+
+- Python
+- Go
+- Haskell
 
