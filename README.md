@@ -14,6 +14,6 @@ and more.
 ## Languages
 
 - Python
-- Go (future)
-- Haskell (future)
+- Go *(future)*
+- Haskell *(future)*
 
